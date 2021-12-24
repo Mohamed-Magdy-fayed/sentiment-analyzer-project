@@ -1,0 +1,61 @@
+.analysis {
+    border: 1px solid #545454;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        border-bottom: 1px solid #545454;
+        padding: 1rem 0;
+        align-self: baseline;
+    }
+
+    .scores {
+        border: 1px solid #545454;
+        border-radius: 2rem;
+        width: 60%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+            margin: 1rem;
+            display: flex;
+            border-bottom: 0.05rem solid #545454;
+            padding: 0.1rem 0;
+            justify-content: space-around;
+            width: 80%;
+
+            span {
+                margin-left: auto;
+                color: green;
+            }
+        }
+    }
+
+    .text {
+        margin-top: 3rem;
+        border: 1px solid #545454;
+        border-radius: 2rem;
+        padding: 1.5rem;
+
+        article {
+            margin-top: 1rem;
+            text-align: center;
+
+            > * {
+                line-height: 1.4rem;
+            }
+
+            .section {
+                border-bottom: 1px solid #545454;
+                padding: 1rem 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analyzer</title>
+</head>
+
+<body>
+  <main>
+    <div>
+      <section>
+        <form id="form" class="form">
+          <div class="title">Enter a URL of an article / a blog to discover its sentiment.</div>
+          <label for="url">URL</label>
+          <input id="url" type="text" name="input" value="" placeholder="Enter An Article URL here" />
+          <button type="submit" class="submit">
+            Analyz
+          </button>
+        </form>
+      </section>
+
+      <section class="analysis">
+        <div class="title">Form Results:</div>
+        <div class="scores">
+          <div class="item">Article score tag: <span id="score_tag"></span></div>
+          <div class="item">Article confidence score: <span id="confidence"></span></div>
+          <div class="item">Article agreement: <span id="agreement"></span></div>
+          <div class="item">Article subjectivity: <span id="subjectivity"></span></div>
+          <div class="item">Article irony: <span id="irony"></span></div>
+        </div>
+        <div class="text">
+          <div class="title">Article text: </div>
+          <div id="text"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    all rights reserved 2021 @ Mohamed Magdy
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+      })
+    }
+  </script>
+</body>
+
+</html>

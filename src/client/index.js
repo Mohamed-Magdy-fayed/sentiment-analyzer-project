@@ -1,0 +1,16 @@
+import { testURL } from './js/checkURL'
+import { handleSubmit } from './js/formHandler'
+import './styles/resets.scss'
+import './styles/base.scss'
+import './styles/footer.scss'
+import './styles/form.scss'
+import './styles/analysis.scss'
+
+document.getElementById('form').addEventListener('submit' , (e) => {
+    handleSubmit(e)
+})
+
+export {
+    testURL,
+    handleSubmit
+   }
